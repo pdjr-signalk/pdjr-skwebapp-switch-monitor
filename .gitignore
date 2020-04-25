@@ -1,3 +1,7 @@
+# Local libraries
+lib/signalk-client
+lib/page-utils
+
 # Logs
 logs
 *.log
