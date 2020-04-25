@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch monitor</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script type="text/javascript" src="lib/page-utils/PageUtils.js"></script>
+	<script type="text/javascript" src="lib/signalk-client/SignalkClient.js"></script>
+	<script type="text/javascript" src="lib/SwitchMonitor.js"></script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    <style>
+        html, body {
+            background: black;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        p, h1, h2, h3 {
+            margin-top: 0;
+        }
+        p {
+            color: red;
+        }
+        .sb-container {
+            padding-top: 10px;
+            display: none;
+        }
+        .sb-container.local {
+            display: block;
+        }
+        .channel {
+            width: 100px;
+            height: 50px;
+            font-size: 75%;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            opacity: 0.7;
+            border: 1px black solid;
+            background-color: grey;
+            display: none !important;
+        }
+        .channel.local {
+            display: table-cell !important;
+        }
+        .channel.on, .channel.off {
+            background-color: orange;
+        }
+        .channel.switch.on, .channel.switch.off {
+            background-color: green !important;
+        }
+        .table.switchbank {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .sb-label {
+            width: 90px;
+            min-width: 90px;
+            height: 60px;
+            background-color: #101010;
+            color: grey;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 80%;
+            font-weight: bold;
+        }
+        .channels {
+            background-color: #101010;
+            vertical-align: middle;
+            padding: 5px;
+            padding-right: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .channel.on {
+            opacity: 1;
+            color: white;
+        }
+        .table {
+            display: table;
+        }
+        .table-row {
+            display: table-row;
+        }
+        .table-cell {
+            display: table-cell;
+        }
+    </style>
+</head>
+<body onload="PageUtils.noRightClick(); SwitchMonitor.create({ server: '192.168.1.1', port: 3000, container: '#container' });">
+    <div id='container'>
+        <script>
+        </script>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

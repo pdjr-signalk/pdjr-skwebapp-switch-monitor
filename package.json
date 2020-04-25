@@ -1,0 +1,29 @@
+{
+  "name": "signalk-switch-monitor",
+  "version": "1.0.0",
+  "description": "Signal K switch monitor.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preeve9534/signalk-switch-monitor.git"
+  },
+  "keywords": [
+    "signalk-webapp",
+    "switch",
+    "monitor"
+  ],
+  "author": "Paul Reeve <paul@pdjr.eu>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/preeve9534/signalk-switch-monitor/issues"
+  },
+  "homepage": "https://github.com/preeve9534/signalk-switch-monitorr#readme",
+  "dependencies": {
+    "node-persist": "^3.0.5",
+    "node-schedule": "^1.3.2",
+    "optimist": "^0.6.1",
+    "websocket": "^1.0.31"
+  }
+}
