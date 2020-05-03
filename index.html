@@ -23,14 +23,14 @@
         p {
             color: red;
         }
-        .sb-container {
+        .switchbank-container {
             padding-top: 10px;
-            display: none;
-        }
-        .sb-container.local {
             display: block;
         }
-        .channel {
+        .switchbank-container.artifact {
+            display: none !important;
+        }
+        .switchbank-channel-cell {
             width: 100px;
             height: 50px;
             font-size: 75%;
@@ -39,23 +39,21 @@
             vertical-align: middle;
             opacity: 0.7;
             border: 1px black solid;
-            background-color: grey;
+            background-color: orange;
+            color: black;
+            display: table-cell;
+        }
+        .switchbank-channel-cell.artifact {
             display: none !important;
         }
-        .channel.local {
-            display: table-cell !important;
-        }
-        .channel.on, .channel.off {
-            background-color: orange;
-        }
-        .channel.switch.on, .channel.switch.off {
+        .switchbank-channel-cell.switch {
             background-color: green !important;
         }
-        .table.switchbank {
+        .switchbank-table {
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-        .sb-label {
+        .switchbank-table-header {
             width: 90px;
             min-width: 90px;
             height: 60px;
@@ -66,7 +64,7 @@
             font-size: 80%;
             font-weight: bold;
         }
-        .channels {
+        .switchbank-table-channel-container {
             background-color: #101010;
             vertical-align: middle;
             padding: 5px;
@@ -74,9 +72,12 @@
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-        .channel.on {
+        .switchbank-channel-cell.on {
             opacity: 1;
-            color: white;
+            color: black;
+        }
+        .switchbank-channel-cell.expired {
+            background-color: grey !important;
         }
         .table {
             display: table;
@@ -86,6 +87,15 @@
         }
         .table-cell {
             display: table-cell;
+        }
+        .timeout {
+            //background-image: none !important;
+            animation: timeoutBG 5s ease-in !important;
+         }
+        @keyframes timeoutBG {
+            0% { background-color: currentColor; }
+            50% { background-color: currentColor; }
+            100% { background-color: grey; }
         }
     </style>
 </head>
