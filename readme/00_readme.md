@@ -6,18 +6,20 @@ This project implements a webapp for the
 [Signal K Node server](https://github.com/SignalK/signalk-server-node).
 
 __signalk-switch-monitor__ displays a graphical representation of the host
-Signal K server's ```electrical/switches/*``` tree.  Each detected switch is
-displayed as part of a switchbank with switches not implemented under the NMEA
-switchvank model aggregated into a "MISC" group.
+Signal K server's ```electrical/switches/*``` tree.
 
-Active switch channels (i.e. ones for which current state information is
-available) are displayed in orange, inactive switches in grey.
-If meta information is available for a switch channel then the value of the
-```name``` attribute is used as the switch channel label and the value of the
-```type``` attribute is used to modify the switch channel background color,
-with the color green used to identify switches which have type equal to switch.
+![Switchbank display on the sevelopment system](/readme/screenshot.png)
+
+Displayed data is organised in a way which to a limited extent reflects
+the structural principles of the Signal K data tree (see Section 3, belkow).
+This ensures, for example, that switches which comprise an NMEA switchbank
+are displayed together.
+
+Active switch channels are displayed in colour: if it is possible to determine
+the type of a switch channel from system meta data then alternate color will
+be used to explicitly differentiate switches from relays.  Channels with status
+data which is over 5 seconds old are considered inactive and coloured grey.
 
 The display is updated in real time to reflect actual switch states with the
 OFF condition shown dark and the ON condition shown light.
 
-![Switchbank display on the sevelopment system](/readme/screenshot.png)
