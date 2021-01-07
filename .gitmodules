@@ -10,9 +10,9 @@
 [submodule "public/lib/page-utils"]
 	path = public/lib/page-utils
 	url = https://github.com/preeve9534/page-utils
-[submodule "public/lib/signalk-switchmonitor-widget"]
-	path = public/lib/signalk-switchmonitor-widget
-	url = https://github.com/preeve9534/signalk-switchmonitor-widget
 [submodule "public/lib/pdjr-skwidget-alarm-popup"]
 	path = public/lib/pdjr-skwidget-alarm-popup
 	url = https://github.com/preeve9534/pdjr-skwidget-alarm-popup
+[submodule "public/lib/pdjr-skwidget-switch-monitor"]
+	path = public/lib/pdjr-skwidget-switch-monitor
+	url = https://github.com/preeve9534/pdjr-skwidget-switch-monitor
