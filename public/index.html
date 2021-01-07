@@ -6,11 +6,11 @@
 
     <script type="text/javascript" src="lib/page-utils/PageUtils.js"></script>
     <script type="text/javascript" src="lib/signalk-libsignalkclient/SignalkClient.js"></script>
-    <script type="text/javascript" src="lib/signalk-alarm-widget/AlarmWidget.js"></script>
+    <script type="text/javascript" src="lib/pdjr-skwidget-alarm-popup/AlarmPopup.js"></script>
     <script type="text/javascript" src="lib/signalk-switchmonitor-widget/SwitchMonitorWidget.js"></script>
 
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="lib/signalk-alarm-widget/AlarmWidget.css">
+    <link rel="stylesheet" type="text/css" href="lib/pdjr-skwidget-alarm-popup/AlarmPopup.css">
     <link rel="stylesheet" type="text/css" href="lib/signalk-switchmonitor-widget/SwitchMonitorWidget.css">
   </head>
   <script>
@@ -19,7 +19,7 @@
       var signalkClient = SignalkClient.connect();
       signalkClient.waitForConnection().then(
         () => {
-          AlarmWidget.install(signalkClient);
+          AlarmPopup.install(signalkClient);
           SwitchMonitorWidget.install(signalkClient);
         },
         () => {
