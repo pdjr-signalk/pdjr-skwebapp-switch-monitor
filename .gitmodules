@@ -16,3 +16,6 @@
 [submodule "public/lib/pdjr-skwidget-switch-monitor"]
 	path = public/lib/pdjr-skwidget-switch-monitor
 	url = https://github.com/preeve9534/pdjr-skwidget-switch-monitor
+[submodule "public/lib/pdjr-skwidget-signalkclient"]
+	path = public/lib/pdjr-skwidget-signalkclient
+	url = http://github.com/preeve9534/pdjr-skwidget-signalkclient
